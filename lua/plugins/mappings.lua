@@ -22,7 +22,10 @@ return {
           -- MarkdownPreview
           ["<Leader>Tm"] = { "<cmd>MarkdownPreview<cr>", desc = "Markdown preview" },
           -- Oil
-          ["<Leader>-"] = { "<CMD>Oil<CR>", desc = "Open parent directory with Oil" },
+          ["<Leader>-"] = { "<cmd>Oil<cr>", desc = "Open parent directory with Oil" },
+        },
+        v = {
+          ["<Leader>f"] = { ":!column -t -s '|' -o '|'<cr>", desc = "Format Table" }, -- https://heitorpb.github.io/bla/format-tables-in-vim/
         },
       },
     },
